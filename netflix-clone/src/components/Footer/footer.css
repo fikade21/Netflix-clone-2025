@@ -1,0 +1,112 @@
+.footer-outer-continer {
+    background-color: #000;
+    color: #808080;
+    padding: 3rem 0 1rem;
+    margin-top: 2rem;
+    border-top: 1px solid #333;
+  }
+  
+  .footer-inner-continer {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 4%;
+  }
+  
+  .footer-icon {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .footer-icon svg {
+    font-size: 1.8rem;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .footer-icon svg:hover {
+    color: #e50914;
+  }
+  
+  .footer-data {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .footer-data ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .footer-data ul li {
+    margin-bottom: 1rem;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: color 0.3s;
+    text-transform: capitalize;
+  }
+  
+  .footer-data ul li:hover {
+    color: #fff;
+    text-decoration: underline;
+  }
+  
+  .service-code {
+    margin-bottom: 1.5rem;
+  }
+  
+  .service-code p {
+    display: inline-block;
+    border: 1px solid #808080;
+    padding: 0.5rem;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin: 0;
+  }
+  
+  .service-code p:hover {
+    color: #fff;
+    border-color: #fff;
+  }
+  
+  .copy-write {
+    font-size: 0.8rem;
+    color: #808080;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .header-left ul {
+      gap: 1rem;
+    }
+    
+    .header-left ul li {
+      font-size: 0.8rem;
+    }
+    
+    .headre-right ul {
+      gap: 1rem;
+    }
+    
+    .footer-data {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .header-container {
+      padding: 1rem 2%;
+    }
+    
+    .header-left ul li:not(:first-child):not(:nth-child(2)) {
+      display: none;
+    }
+    
+    .footer-data {
+      grid-template-columns: 1fr;
+    }
+  }
